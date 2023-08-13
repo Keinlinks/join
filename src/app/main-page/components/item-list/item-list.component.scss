@@ -1,0 +1,113 @@
+.item {
+  padding: 3px 0;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  opacity: 0.8;
+  &:hover {
+    opacity: 1;
+  }
+  div {
+    p {
+      text-align: center;
+    }
+  }
+  div {
+    p {
+      font-size: 16px;
+      color: white;
+      font-weight: bold;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  .name {
+    width: 280px;
+    p {
+      margin-left: 34px;
+    }
+    .item_name {
+      width: 248px;
+
+      p {
+        margin: 0;
+        text-align: start;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 248px;
+      }
+    }
+    .item_img {
+      width: 32px;
+      height: 16px;
+
+      .img {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: white;
+        margin: 0 auto;
+      }
+    }
+  }
+  .flex {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .state {
+    width: 100px;
+    .circle {
+      width: 53px;
+      div {
+        margin: 0 auto;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: var(--green);
+      }
+    }
+  }
+  .item_state {
+    p {
+      width: 53px;
+    }
+  }
+  .modif {
+    width: 193px;
+  }
+  .item_modif {
+    p {
+      width: 129px;
+    }
+  }
+  .duration {
+    width: 106px;
+  }
+  .item_duration {
+    p {
+      width: 74px;
+    }
+  }
+  .version {
+    width: 100px;
+  }
+  .item_version {
+    p {
+      width: 80px;
+    }
+  }
+  .ubication {
+    min-width: 190px;
+  }
+  .item_ubication {
+    p {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 220px;
+    }
+  }
+}

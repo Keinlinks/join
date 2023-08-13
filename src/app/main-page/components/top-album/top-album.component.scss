@@ -1,0 +1,47 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  position: relative;
+  .menu {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 8px;
+    right: 30px;
+  }
+  .title_image {
+    width: 100%;
+    height: 230px;
+    padding: 10px 0 0px 0;
+    .image {
+      background-color: white;
+      margin: 0 auto;
+      width: 180px;
+      height: 205px;
+    }
+  }
+  .title {
+    width: 100%;
+    height: 46px;
+    h1 {
+      padding: 6px 0;
+      font-size: 32px;
+      color: white;
+      text-align: center;
+    }
+  }
+  .prompt_container {
+    height: 23px;
+    width: 100%;
+    .prompts {
+      width: 100%;
+      font-size: 16px;
+      color: var(--secondary-white);
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+}

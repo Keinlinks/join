@@ -11,7 +11,7 @@ electronReload(__dirname, {
 });
 app.on("ready", () => {
   const mainWindow = new BrowserWindow({
-    minWidth: 1200,
+    minWidth: 1500,
     minHeight: 1000,
     webPreferences: {
       nodeIntegration: true, // Habilita la integración con Node.js en la página cargada
