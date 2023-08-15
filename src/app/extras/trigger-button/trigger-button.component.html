@@ -1,0 +1,6 @@
+<div class="container" (click)="state = !state">
+  <div
+    class="circle"
+    [ngClass]="{ 'green-animation': state, 'red-animation': !state }"
+  ></div>
+</div>

@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="leftsection">
+    <div class="image_album">
+      <div></div>
+    </div>
+    <h1 *ngIf="isEdit" (dblclick)="editTitle()">{{ title }}</h1>
+    <div *ngIf="!isEdit" class="edit">
+      <textarea type="text" [value]="title" [(ngModel)]="title"></textarea>
+      <button (click)="editTitle()">Aceptar</button>
+    </div>
+
+    <div class="button">
+      <button>Eliminar album</button>
+    </div>
+  </div>
+  <div class="rightsection">
+    <h2>Generos</h2>
+    <form>
+      <input type="text" [(ngModel)]="prompt" />
+
+      <button type="submit" (click)="addPrompts()">Agregar</button>
+    </form>
+    <div class="prompts">
+      <app-prompts
+        *ngFor="let prompt of prompts"
+        (click)="removePrompt(prompt)"
+        [word]="prompt"
+      ></app-prompts>
+    </div>
+  </div>
+</div>

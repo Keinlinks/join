@@ -1,0 +1,27 @@
+.item {
+  width: 100%;
+  height: 16px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 4px 0 4px 8px;
+  &:hover {
+    filter: brightness(50%);
+    color: var(--primary-black);
+  }
+  .name {
+    flex-basis: 357px;
+  }
+  .version {
+    flex-basis: 55px;
+    p {
+      width: 55px;
+      text-align: center;
+    }
+  }
+}
+.isSelected {
+  background-color: var(--secondary-white);
+  filter: brightness(80%);
+  color: var(--primary-black);
+}

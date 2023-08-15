@@ -1,0 +1,132 @@
+.container {
+  width: 882px;
+  height: 364px;
+  background-color: var(--secondary-white);
+  border-radius: 2px;
+  padding: 25px 15px;
+  display: flex;
+  justify-content: center;
+  .leftsection {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+    justify-content: center;
+    flex-basis: 50%;
+
+    .image_album {
+      margin: 0 auto;
+      div {
+        width: 163px;
+        height: 205px;
+        background-color: white;
+      }
+    }
+    h1 {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      width: 200px;
+      word-wrap: break-word;
+      margin: 0 auto;
+    }
+    input {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .button {
+      flex-basis: 1;
+      margin-top: auto;
+      display: flex;
+      justify-content: center;
+      button {
+        color: white;
+        font-weight: bold;
+        background-color: var(--primary-black);
+        border-radius: 5px;
+        padding: 5px 10px;
+        &:hover {
+          cursor: pointer;
+
+          background-color: var(--red);
+          color: white;
+        }
+      }
+    }
+    .edit {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      gap: 2px;
+      textarea {
+        font-family: inherit;
+        resize: none;
+        font-size: 24px;
+        width: 300px;
+        height: 60px;
+        border: none;
+        text-align: center;
+        outline: none;
+        background-color: transparent;
+        word-wrap: break-word;
+        margin: 0 auto;
+      }
+      button {
+        width: 80px;
+        height: 25px;
+        color: white;
+        font-weight: bold;
+        background-color: var(--primary-black);
+        border-radius: 5px;
+        padding: 5px 10px;
+        opacity: 0.9;
+        margin: 0 auto;
+        &:hover {
+          cursor: pointer;
+          background-color: var(--green);
+          color: var(--primary-black);
+        }
+      }
+    }
+  }
+  .rightsection {
+    display: flex;
+    flex-flow: column nowrap;
+    flex-basis: 50%;
+    h2 {
+      font-size: 16px;
+    }
+    form {
+      input {
+        width: 250px;
+        height: 20px;
+        border-radius: 4px;
+        stroke: var(--secondary-white);
+        stroke-width: 1px;
+        padding: 3px 7px;
+      }
+      button {
+        margin-left: 4px;
+        padding: 7px 10px;
+
+        background-color: var(--primary-black);
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        &:hover {
+          cursor: pointer;
+          background-color: var(--green);
+          color: var(--primary-black);
+        }
+      }
+    }
+    .prompts {
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+  }
+}

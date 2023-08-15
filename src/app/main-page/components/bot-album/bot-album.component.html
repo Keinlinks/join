@@ -14,10 +14,16 @@
     <div class="ubication"><p>Ubicacion</p></div>
   </div>
   <div class="items_list">
-    <app-item-list></app-item-list>
-    <app-item-list></app-item-list>
-    <app-item-list></app-item-list>
-    <app-item-list></app-item-list>
-    <app-item-list></app-item-list>
+    <app-item-list
+      class="select"
+      *ngFor="let item of items; let i = index"
+      [attr.tabindex]="i + 1"
+    ></app-item-list>
+  </div>
+</div>
+
+<div class="blocker" *ngIf="popupComponent">
+  <div class="popup">
+    <app-song-popup></app-song-popup>
   </div>
 </div>

@@ -1,0 +1,67 @@
+.container {
+  width: 882px;
+  height: 364px;
+  background-color: var(--secondary-white);
+  border-radius: 2px;
+  .left_section {
+    width: 427px;
+    height: 100%;
+    float: left;
+    margin: 15px 0 15px 14px;
+    .top-bar {
+      width: 100%;
+      margin-left: 13px;
+      .logo {
+        width: 150px;
+        float: left;
+        div {
+          width: 146px;
+          height: 140px;
+          border-radius: 50%;
+          background-color: black;
+        }
+      }
+      .title_cnt {
+        width: 254px;
+        float: left;
+        margin-left: 14px;
+        .title {
+          font-size: 20px;
+          padding: 5px 0;
+        }
+        .state {
+          padding: 5px;
+        }
+        button {
+          display: block;
+          font-size: 16px;
+          padding: 5px 0;
+          font-weight: bold;
+          opacity: 0.8;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  .right_description {
+    width: 372px;
+    height: 100%;
+    float: right;
+    margin-right: 40px;
+    h3 {
+      font-size: 16px;
+      padding: 15px;
+    }
+    textarea {
+      resize: none;
+      color: white;
+      font-weight: bold;
+      width: 100%;
+      height: 276px;
+      padding: 10px;
+      background-color: var(--secondary-grey);
+    }
+  }
+}

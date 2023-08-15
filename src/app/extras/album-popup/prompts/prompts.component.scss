@@ -1,0 +1,14 @@
+p {
+  padding: 5px 10px;
+  color: white;
+  background-color: var(--primary-black);
+  border-radius: 8px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  &:hover {
+    background-color: var(--green);
+    color: var(--primary-black);
+    cursor: pointer;
+  }
+}

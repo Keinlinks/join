@@ -1,0 +1,36 @@
+.container {
+  width: 205px;
+  height: 190px;
+  padding: 10px 12px;
+  background-color: var(--primary-black);
+  font-size: 16px;
+  position: absolute;
+  top: 24px;
+  right: 30px;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
+  button {
+    color: white;
+    padding: 10px 0;
+    opacity: 0.9;
+    font-weight: bold;
+    &:hover {
+      opacity: 1;
+      background-color: var(--secondary-white);
+      color: var(--primary-black);
+    }
+  }
+  button:nth-child(1) {
+    margin-top: 5px;
+  }
+  button:nth-child(3) {
+    color: var(--red);
+    margin-top: auto;
+    &:hover {
+      opacity: 1;
+      background-color: var(--red);
+      color: var(--primary-black);
+    }
+  }
+}
