@@ -92,7 +92,7 @@
       }
     }
     .version {
-      width: 100px;
+      width: 150px;
     }
     .item_version {
       p {
@@ -160,5 +160,8 @@
   background-color: rgba(0, 0, 0, 0);
 }
 .select {
-  user-select: all;
+  background-color: red;
+  &:active {
+    background-color: red;
+  }
 }

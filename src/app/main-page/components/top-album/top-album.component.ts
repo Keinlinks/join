@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./top-album.component.scss'],
 })
 export class TopAlbumComponent {
-  popupComponent: boolean = true;
+  popupComponent: boolean = false;
 }
