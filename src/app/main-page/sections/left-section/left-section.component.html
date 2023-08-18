@@ -16,11 +16,22 @@
   </div>
   <div class="album_title">
     <h2>Album</h2>
-    <button class="addAlbum">Agregar album</button>
+    <button class="addAlbum" (click)="popupComponent = true">
+      Agregar album
+    </button>
   </div>
   <div class="albums_container">
     <button class="album_item">
       <app-albums-menu></app-albums-menu>
     </button>
   </div>
+</div>
+
+<div
+  class="blocker"
+  *ngIf="popupComponent"
+  (click)="popupComponent = false"
+></div>
+<div class="popup" *ngIf="popupComponent">
+  <app-add-album-popup></app-add-album-popup>
 </div>

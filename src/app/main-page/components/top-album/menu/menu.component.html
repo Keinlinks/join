@@ -1,5 +1,13 @@
 <div class="container">
-  <button>Ajustes</button>
+  <button (click)="popupComponent = true">Ajustes</button>
   <button>Cambiar nombre</button>
   <button>Eliminar album</button>
+</div>
+<div
+  class="blocker"
+  *ngIf="popupComponent"
+  (click)="popupComponent = false"
+></div>
+<div class="popup" *ngIf="popupComponent">
+  <app-album-popup></app-album-popup>
 </div>

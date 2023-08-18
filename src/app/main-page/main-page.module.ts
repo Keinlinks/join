@@ -11,6 +11,7 @@ import { ItemListComponent } from './components/item-list/item-list.component';
 import { SongPopupModule } from '../extras/song-popup/song-popup.module';
 import { MenuComponent } from './components/top-album/menu/menu.component';
 import { AlbumPopupComponent } from '../extras/album-popup/album-popup.component';
+import { AddAlbumPopupComponent } from '../extras/add-album-popup/add-album-popup.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,12 @@ import { AlbumPopupComponent } from '../extras/album-popup/album-popup.component
     ItemListComponent,
     MenuComponent,
   ],
-  imports: [CommonModule, SongPopupModule, AlbumPopupComponent],
+  imports: [
+    CommonModule,
+    SongPopupModule,
+    AlbumPopupComponent,
+    AddAlbumPopupComponent,
+  ],
   exports: [MainPageComponent],
 })
 export class MainPageModule {}

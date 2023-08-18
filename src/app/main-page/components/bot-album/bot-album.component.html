@@ -17,12 +17,16 @@
     <app-item-list
       *ngFor="let item of items; let i = index"
       [attr.tabindex]="i + 1"
+      (dblclick)="popupComponent = true"
     ></app-item-list>
   </div>
 </div>
 
-<div class="blocker" *ngIf="popupComponent">
-  <div class="popup">
-    <app-song-popup></app-song-popup>
-  </div>
+<div
+  class="blocker"
+  *ngIf="popupComponent"
+  (click)="popupComponent = false"
+></div>
+<div class="popup" *ngIf="popupComponent">
+  <app-song-popup></app-song-popup>
 </div>
